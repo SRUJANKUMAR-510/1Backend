@@ -1,2 +1,1 @@
-export const DB_NAME="srujan's DB"
-  
+export const DB_NAME="srujan's DB";

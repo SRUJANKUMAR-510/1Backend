@@ -2,12 +2,13 @@
 //to write a utility wrapper function
 
 const asyncHandler = (requestHandler)=>{
-    (req,res,next)=>{
+    return (req,res,next)=>{
         Promise.resolve(requestHandler(req,res,next)).catch((err)=>next(err))
     }
-}//prod grade code std
-//promises async handler,higher order func
-export {asyncHandler}
+}
+//prod grade code std
+//promises async handler,higher order func->we have to return it
+export {asyncHandler};
  
 // const asyncHandler=()=>{}
 // const asyncHandler=(fn)=>()=>{}//2nd
